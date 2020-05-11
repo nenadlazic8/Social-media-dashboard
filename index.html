@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Nenad Lazic</title>
+
+  <!--CSS FILES-->
+  <script src="https://kit.fontawesome.com/32d77365f7.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+
+
+  <main>
+    <div class="social-media-platform">
+      <div class="container">
+        <!--SOCIAL MEDIA HEADER START-->
+        <section class="social-header">
+          <div class="social-title">
+            <h2>Social Media Dashboard</h2>
+            <p>Total Followers: <span class="followers-number">23,004</span></p>
+          </div>
+
+          <div class="mode">
+            <p class="current-mode">Dark mode:</p>
+            <div class="toggle" id="toggle" onclick="darkMode()">
+              <div class="ball" id="ball"></div>
+            </div>
+          </div>
+        </section>
+        <!--SOCIAL MEDIA HEADER END-->
+
+
+
+        <!--SOCIAL MEDIA ACCOUNT START-->
+        <section class="social-accounts">
+          <div class="container">
+            <div class="social-account-wrapper">
+              <!--SOCIAL MEDIA ITEM START-->
+              <div class="social-account-item my-facebook b-facebook box">
+                <p class="social-names-box">
+                  <a href="#" class="fab fa-facebook-square c-facebook"></a>
+                  <a href="#" class="social-name">@nathanf</a>
+                </p>
+
+                <h3 class="followers-number-single">1987</h3>
+
+                <p class="folowers-name">followers</p>
+
+                <p class="gained-followers-today positive"><span class="fas fa-sort-up"></span>12 Today</p>
+              </div>
+              <!--SOCIAL MEDIA ITEM END-->
+
+              <!--SOCIAL MEDIA ITEM START-->
+              <div class="social-account-item  my-twitter b-twitter box">
+                <p class="social-names-box">
+                  <a href="#" class="fab fa-twitter c-twitter"></a>
+                  <a href="#" class="social-name">@nathanf</a>
+                </p>
+
+                <h3 class="followers-number-single">1044</h3>
+
+                <p class="folowers-name">followers</p>
+
+                <p class="gained-followers-today positive"><span class="fas fa-sort-up"></span>99 Today</p>
+              </div>
+              <!--SOCIAL MEDIA ITEM END-->
+
+              <!--SOCIAL MEDIA ITEM START-->
+              <div class="social-account-item my-instagram b-instagram box">
+                <p class="social-names-box">
+                  <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                      <defs>
+                        <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                          <stop offset="0%" stop-color="#DF4896" />
+                          <stop offset="50.913%" stop-color="#EE877E" />
+                          <stop offset="100%" stop-color="#FDC366" />
+                        </linearGradient>
+                      </defs>
+                      <path fill="url(#a)"
+                        d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.878.06 2.246.227.228 2.242.06 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" />
+                    </svg></a>
+                  <a href="#" class="social-name">@nathanf</a>
+                </p>
+
+                <h3 class="followers-number-single">11K</h3>
+
+                <p class="folowers-name">followers</p>
+
+                <p class="gained-followers-today positive"><span class="fas fa-sort-up"></span>1099 Today</p>
+              </div>
+              <!--SOCIAL MEDIA ITEM END-->
+
+              <!--SOCIAL MEDIA ITEM START-->
+              <div class="social-account-item my-youtube b-youtube box">
+                <p class="social-names-box">
+                  <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                      <path fill="#C4032B"
+                        d="M10 0C4.478 0 0 4.478 0 10c0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.7 14.077c-1.75.12-5.652.12-7.402 0-1.896-.13-2.117-1.059-2.131-4.077.014-3.024.237-3.947 2.131-4.077 1.75-.12 5.652-.12 7.403 0 1.897.13 2.117 1.059 2.132 4.077-.015 3.024-.237 3.947-2.132 4.077zM8.334 8.048l4.098 1.949-4.098 1.955V8.048z" />
+                      </svg></a>
+                  <a href="#" class="social-name">@nathanf</a>
+                </p>
+
+                <h3 class="followers-number-single">8239</h3>
+
+                <p class="folowers-name">subscribers</p>
+
+                <p class="gained-followers-today negative"><span class="fas fa-sort-down"></span>12 Today</p>
+              </div>
+              <!--SOCIAL MEDIA ITEM END-->
+            </div>
+          </div>
+        </section>
+        <!--SOCIAL MEDIA ACCOUNT END-->
+
+
+        <!--SOCIAL MEDIA OVERVIEW START-->
+        <section class="social-overview">
+          <div class="container">
+            <h3 class="overview-heading">Overview - Today</h3>
+            <div class="social-overview-wrapper">
+              <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+              <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Page views</p>
+                  <p class="overview-number1">87</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class="fab fa-facebook-square c-facebook"></a>
+                  <p class="overview-number positive"><span class="fas fa-sort-up"></span>3%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Likes</p>
+                  <p class="overview-number1">52</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class="fab fa-facebook-square c-facebook"></a>
+                  <p class="overview-number negative"><span class="fas fa-sort-down"></span>2%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Likes</p>
+                  <p class="overview-number1">5462</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#DF4896"/><stop offset="50.913%" stop-color="#EE877E"/><stop offset="100%" stop-color="#FDC366"/></linearGradient></defs><path fill="url(#a)" d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.878.06 2.246.227.228 2.242.06 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+                  <p class="overview-number positive"><span class="fas fa-sort-up"></span>2257%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Page views</p>
+                  <p class="overview-number1">52K</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#DF4896"/><stop offset="50.913%" stop-color="#EE877E"/><stop offset="100%" stop-color="#FDC366"/></linearGradient></defs><path fill="url(#a)" d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.878.06 2.246.227.228 2.242.06 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+                  <p class="overview-number positive"><span class="fas fa-sort-up"></span>1375%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+            </div>
+
+
+            <div class="social-overview-wrapper">
+              <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+              <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Retweets</p>
+                  <p class="overview-number1">117</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class="fab fa-twitter c-twitter"></a>
+                  <p class="overview-number positive"><span class="fas fa-sort-up"></span>303%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Likes</p>
+                  <p class="overview-number1">507</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class="fab fa-twitter c-twitter"></a>
+                  <p class="overview-number positive"><span class="fas fa-sort-up"></span>553%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Likes</p>
+                  <p class="overview-number1">107</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#C4032B" d="M10 0C4.478 0 0 4.478 0 10c0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.7 14.077c-1.75.12-5.652.12-7.402 0-1.896-.13-2.117-1.059-2.131-4.077.014-3.024.237-3.947 2.131-4.077 1.75-.12 5.652-.12 7.403 0 1.897.13 2.117 1.059 2.132 4.077-.015 3.024-.237 3.947-2.132 4.077zM8.334 8.048l4.098 1.949-4.098 1.955V8.048z"/></svg></a>
+                  <p class="overview-number negative"><span class="fas fa-sort-down"></span>19%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+
+               <!--SOCIAL MEDIA OVERVIEW ITEM START-->
+               <div class="social-overview-item box">
+                <div class="overview-info"> 
+                  <p class="overview-title">Total views</p>
+                  <p class="overview-number1">1407</p>
+                </div>
+
+                <div class="overview-info"> 
+                  <a class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#C4032B" d="M10 0C4.478 0 0 4.478 0 10c0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.7 14.077c-1.75.12-5.652.12-7.402 0-1.896-.13-2.117-1.059-2.131-4.077.014-3.024.237-3.947 2.131-4.077 1.75-.12 5.652-.12 7.403 0 1.897.13 2.117 1.059 2.132 4.077-.015 3.024-.237 3.947-2.132 4.077zM8.334 8.048l4.098 1.949-4.098 1.955V8.048z"/></svg></a>
+                  <p class="overview-number negative"><span class="fas fa-sort-down"></span>12%</p>
+                </div>
+              </div><!--SOCIAL MEDIA OVERVIEW ITEM END-->
+            </div> 
+          </div>
+        </section><!--SOCIAL MEDIA OVERVIEW END-->
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js">
+   
+  </script>
+</body>
+
+</html>
