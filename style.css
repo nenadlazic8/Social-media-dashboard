@@ -61,6 +61,10 @@ body{
     border-top: 2px solid hsl(348, 97%, 39%);
 }
 
+.social-media-platform {
+    min-height: 100vh;
+}
+
 .toggle {
     width: 50px;
     height: 25px;
@@ -81,9 +85,33 @@ body{
     left: 5%;
 }
 
+.box{
+    cursor: pointer;
+}
+
+.box:hover{
+    background: hsl(230, 22%, 31%) !important;
+}
+
+.box-light:hover{
+background: hsl(224, 15%, 80%) !important;
+}
+
+.attribution {
+    padding: 50px 0 20px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: rgb(38, 122, 231);
+}
+
 /*MOBILE PHONE*/
 
-@media (min-width: 375px){
+
     /*SOCIAL MEDIA ACCOUNTS STYLE*/
 
 .social-account-wrapper{
@@ -107,15 +135,23 @@ body{
 /*HEADER STYLE*/
 
 .social-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
+    display: block;
+    padding: 50px 20px;
 }
 
 .social-header p{
     color: #606581;
     font-weight: 700;
    
+}
+
+.social-title:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 15px 0;
+    background-color: #606581;
 }
 
 .social-title h2 {
@@ -135,7 +171,6 @@ body{
 
 p.social-names-box {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     justify-content: center;
 }
@@ -150,7 +185,7 @@ h3.followers-number-single {
 }
 
 a.fab{
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 5px;
     text-decoration: none;
 }
@@ -196,6 +231,7 @@ p.folowers-name {
 /*OVERVIEW STYLE*/
 .overview-heading{
     margin: 30px 0;
+    padding: 0 20px;
 }
 
 .social-overview-wrapper{
@@ -219,7 +255,7 @@ p.folowers-name {
 }
 
 .overview-info {
-    padding: 0 13px;
+    padding: 0 15px;
 }
 
 p.overview-title{
@@ -245,39 +281,23 @@ p.overview-title{
 
 .overview-number1{
     font-size: 30px;
+    font-weight: 700;
 }
-}
+
 
 @media (min-width: 1100px){
-/*HEADER STYLE*/
 
-.social-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-}
+    .social-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 10px;
+        flex-wrap: wrap;
+    }
 
-.social-header p{
-    color: #606581;
-    font-weight: 700;
-   
-}
-
-.social-title h2 {
-    margin-bottom: 6px;
-}
-
-.mode {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-}
-
-.mode p{
-    margin-right: 10px;
-}
-
+    .social-title:after{
+        display: none;
+    }
+    
 /*SOCIAL MEDIA ACCOUNTS STYLE*/
 
 .social-account-wrapper{
@@ -297,69 +317,11 @@ p.overview-title{
     width: 100%;
 }
 
-p.social-names-box {
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    justify-content: center;
-}
-
-p.social-names-box a{
-    margin-right: 7px;
-}
-
-h3.followers-number-single {
-    font-size: 50px;
-    margin-top: 20px;
-}
-
-a.fab{
-    font-size: 20px;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-.social-name{
-    color: #606581;
-    text-decoration: none;
-}
-
-p.folowers-name {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #606581;
-    font-weight: 400;
-}
-
-.gained-followers-today{
-    font-weight: 700;
-}
-
-.gained-followers-today span.fas{
-    margin-right: 7px;
-}
-
-.my-instagram{
-   position: relative;
-}
-
-.my-instagram:before{
-    content: '';
-    height: 2px;
-    display: block;
-    width: 100%;
-    border-radius: 5px;
-    background: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 /*OVERVIEW STYLE*/
+
 .overview-heading{
     margin: 30px 0;
+    padding: 0 10px;
 }
 
 .social-overview-wrapper{
@@ -382,33 +344,5 @@ p.folowers-name {
     justify-content: space-between;
 }
 
-.overview-info {
-    padding: 0 13px;
-}
-
-p.overview-title{
-    margin-bottom: 40px;
-}
-
-.overview-info a, .overview-info svg{
-    margin-bottom: 50px;
-}
-
-p.overview-title{
-    color: #606581;
-    font-weight: 700;
-}
-
-.overview-number, .overview-number1{
-    text-align: left;
-}
-
-.overview-info span.fas {
-    margin-right: 3px;
-}
-
-.overview-number1{
-    font-size: 30px;
-}
 }
 

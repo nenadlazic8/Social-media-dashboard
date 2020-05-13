@@ -8,14 +8,18 @@
     var box = document.getElementsByClassName("box");
     ball.classList.toggle('left');
 
+    
+   
+
     if(ball.classList.contains('left')){
         ball.style.left = '50%';
         toggleItem.style.background = 'linear-gradient(hsl(146, 68%, 55%), hsl(210, 78%, 86%))';
         body.style.backgroundColor = 'hsl(0, 0%, 100%)';
         body.style.color = 'black';
-
+        
         for(let i = 0; i < box.length; i++){
             box[i].style.backgroundColor = 'hsl(227, 47%, 96%)';
+            
         }
         
     }else{
@@ -27,5 +31,10 @@
         for(let i = 0; i < box.length; i++){
             box[i].style.backgroundColor = 'hsl(228, 28%, 20%)';
         }
+    }
+
+    for(let i = 0; i < box.length; i++){
+        box[i].classList.toggle('box-light');
+        
     }
   }
